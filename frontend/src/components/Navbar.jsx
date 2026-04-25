@@ -23,7 +23,6 @@ export default function Navbar({ company, setCompany, onLogout, onRefresh, onRun
         >
           {companies.length === 0 && <option>Loading…</option>}
           {companies.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
-          <option disabled>— placeholder —</option>
         </select>
         <button onClick={onRefresh} disabled={busy}
           className="text-sm border border-ink-700 hover:bg-ink-700/50 disabled:opacity-40 text-slate-200 px-3 py-1.5 rounded-md">

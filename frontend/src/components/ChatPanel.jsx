@@ -3,8 +3,9 @@ import { api } from '../api'
 
 const SUGGESTIONS = [
   'Summarize the top 3 risks',
-  'How was the EV/EBITDA derived?',
-  'Walk me through the DCF assumptions',
+  'What is the headline equity value range?',
+  'Which financial year has the cleanest data?',
+  'List the largest contracts and their counterparties',
 ]
 
 export default function ChatPanel({ company }) {
