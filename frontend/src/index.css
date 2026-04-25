@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+html, body { overflow-x: hidden; }
+body {
+  @apply bg-ink-950 text-slate-100 font-sans antialiased;
+  background-image: radial-gradient(ellipse at top, #102A43 0%, #070F1C 60%);
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.panel { @apply bg-ink-900/70 border border-ink-700/60 rounded-xl shadow-lg backdrop-blur-sm flex flex-col; }
+.panel-header { @apply px-4 py-3 border-b border-ink-700/60 flex items-center justify-between flex-shrink-0; }
+.panel-title { @apply text-sm font-semibold tracking-wide text-accent-400 uppercase; }
+.panel-body { @apply p-4 overflow-y-auto flex-1; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #1E3A5F; border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
