@@ -34,7 +34,7 @@ export default function ChatPanel() {
   return (
     <section className="panel min-h-[420px]">
       <div className="panel-header">
-        <h2 className="panel-title">AI Chat — Claude</h2>
+        <h2 className="panel-title">AI Chat</h2>
         <span className="text-xs text-slate-500">claude-opus-4-7</span>
       </div>
       <div className="panel-body space-y-3">
