@@ -1,0 +1,17 @@
+[Unit]
+Description=Valuations backend (Node/Express)
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=azlan
+WorkingDirectory=/var/www/valuations/backend
+EnvironmentFile=/var/www/valuations/backend/.env
+ExecStart=/home/azlan/.nvm/versions/node/v20.20.2/bin/node server.js
+Restart=on-failure
+RestartSec=3
+StandardOutput=append:/var/log/valuations-backend.log
+StandardError=append:/var/log/valuations-backend.log
+
+[Install]
+WantedBy=multi-user.target
